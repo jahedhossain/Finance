@@ -1,0 +1,853 @@
+/*============================================================
+	Theme Name: Finance
+	Author: Jahed Hossain
+	PSD URL: PsdHub
+	Description:  Finance Business Template
+    Tags: responsive, onepage template, personal, slider , animation
+==============================================================*/
+
+
+/*	TOC  */
+
+
+/*-------------------------
+
+	 1. HEADER & MAIN MENU
+	 2. WELCOME TEXT
+	 3. SERVICE-INFO
+	 4. EXPERT-AREA
+	 5. COMPANY VALUE
+	 6. SERVICES-AREA
+	 7. BLOG-AREA
+	 8. TWITTER-AREA
+	 9. RECENT-ITEMS-AREA
+    10. FOOTER-AREA
+    11. SCROLL TO TOP
+    
+--------------------------*/
+
+/* ==========================================================================
+   Base CSS
+   ========================================================================== */
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+	line-height:24px;
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/*=======================================================
+        1. main-menu+is-sticky > HEADER & MAIN MENU
+=========================================================*/
+
+.main-menu .navbar.navbar-default {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    margin-bottom: 0;
+    min-height: 0px;
+}
+.header-area {
+    padding: 16px 0;
+    font-weight: 800;
+    position: relative;
+}
+.header-area::after {
+    background: #02918c none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.logo a img {
+    height: 20px;
+}
+.main-menu {
+    float: right;
+}
+.main-menu .navbar.navbar-default ul li a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 2px 10px 15px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-menu .navbar.navbar-default ul li a:hover{
+    background: transparent;
+    color: #009688;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #555;
+}
+
+/*=====sticky menu start=====*/
+.sticky-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.is-sticky .header-area::after {
+    opacity: 0.9;
+}
+.is-sticky .logo a img {
+    height: 24px;
+}
+.is-sticky .logo a:hover span {
+    color: #cfc91d;
+}
+.is-sticky .main-menu ul.nav.navbar-nav li a {
+    border: 1px solid rgba(2, 145, 140, 0.7);
+    padding: 5px 15px;
+}
+.header-area::after,
+.logo img,
+.main-menu ul.nav.navbar-nav li a {
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.is-sticky .navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: yellow;
+    color: #555;
+}
+.is-sticky .main-menu .navbar.navbar-default ul li a:hover {
+    background: rgba(2, 145, 140, 0.7);
+    color: yellow;
+    border: 1px solid yellow;
+}
+/*=====sticky menu start end======*/
+
+
+
+
+
+/*======================================================
+        2. welcome-text > WE PROVIDE FINANCIAL PLANNING
+========================================================*/
+
+.welcome-text {
+    background: rgba(0, 0, 0, 0) url("../img/welcome-bg.jpg") no-repeat scroll center center / cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+.welcome-text::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.welcome-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.welcome-text h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.welcome-text h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.welcome-text p {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.welcome-text a.learn-more-btn,
+.expert-btn,
+.single-service-info a.learn-more-btn {
+    background: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 700;
+    border: 1px solid #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s;
+}
+.welcome-text a.learn-more-btn:hover,
+.single-service-info a.learn-more-btn:hover {
+    background: #00968A;
+    color: #fff;
+}
+.welcome-text .learn-more-btn .fa,
+.single-service-info .fa {
+    margin-left: 10px;
+}
+
+
+
+/*=======================================================
+    3. service-info > DON’T SEE WHAT YOU ARE LOOKING FOR?
+=========================================================*/
+
+.service-info{
+    margin-top: -147px;
+}
+.service-info-padding{
+    padding: 100px 21px;
+    background: #fff;
+}
+.single-service-info {
+	background: url(../img/welcome-item-bg.jpg) no-repeat scroll bottom center / cover;
+    color: #fff;
+    margin-right: -15px;
+}
+.single-service-info h3{
+    font-size: 20px;
+    text-transform: uppercase; 
+}
+.single-service-info a.learn-more-btn {
+	margin: 25px -39px 0;
+}
+.box-shadow {
+  box-shadow: 10px 10px 17px #eee;
+}
+
+.learn-more-btn.service-btn {
+    position: relative;
+}
+.learn-more-btn.service-btn::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 20%;
+}
+
+
+
+
+
+/*====================================
+    4. com-value > OUR COMPANY VALUES 
+======================================*/
+
+.com-value{
+    background-color: #fff;
+    background-image: url(../img/man-bg.jpg), url(../img/large-bg.jpg);
+    background-position: 6% 100% , center right;
+    background-size: 470px , cover;
+    background-repeat: no-repeat , no-repeat;
+    padding: 50px 0px 100px;
+    position: relative;
+}
+.com-value::before{
+    content: "";
+    background: url(../img/com-value.png) no-repeat scroll top right;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    
+}
+.value-text {
+    color: #444444;
+}
+.value-text h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #444444;
+    margin-bottom: 30px;
+}
+.value-text p {
+    width: 80%;
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+}
+.value-graph {
+    text-align: center;
+}
+.value-circle,
+.value-circle-one,
+.value-circle-two,
+.value-circle-three,
+.value-circle-four,
+.value-circle-five {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #b2e6e1;
+    border-radius: 50%;
+    margin: 5px;
+}
+.value-circle{
+    position: relative;
+}
+.value-circle .white-step {
+    position: absolute;
+    left: 135px;
+    top: -55px;
+    background-color: #fff;
+    padding: 8px;
+    width: 100px;
+    text-align: left;
+    z-index: 99;
+    height: 65px;
+}
+.value-circle .circle-text{
+    position: absolute;
+    left: 34px;
+    top: 10px;
+    background-color: #fff;
+    padding: 10px 8px;
+    width: 215px;
+    text-align: left;
+    z-index: 99;
+}
+.value-circle .circle-text h2 {
+    text-transform: capitalize;
+    font-size: 26px;
+    color: #009688;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+.value-circle .circle-text p{
+    color: #757575;
+}
+.value-circle-one{
+    height: 170px;
+    width: 170px;
+    border: 5px solid #009688;
+    margin: 10px;
+}
+.value-circle-two{
+    height: 230px;
+    width: 230px;
+    border: 20px solid #009688;
+    margin: 0px;
+    border-top-color: transparent;
+    position: relative;
+}
+.value-circle-two .arrow-circle {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    height: 230px;
+    width: 230px;
+    border: 20px solid transparent;
+    margin: 0px;
+    border-top-color: #009688;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.value-circle-two i {
+    position: absolute;
+    left: 94px;
+    top: -21px;
+    color: #009688;
+    font-size: 22px;
+}
+.value-circle-three{
+    height: 270px;
+    width: 270px;
+    border: 20px solid #00ab9a;
+    margin: 0px;
+    border-top-color: transparent;
+    position: relative;
+}
+.g-line, .g-line2, .g-line3 {
+    position: absolute;
+    left: -140px;
+    top: 50px;
+    height: 2px;
+    width: 150px;
+    background-color: #66c0b8;
+}
+.g-circle, .g-circle2, .g-circle3 {
+    position: absolute;
+    left: -150px;
+    top: 44px;
+    height: 15px;
+    width: 15px;
+    border: 3px solid #009688;
+    border-radius: 50%;
+    background-color: #00c4b1;
+}
+.g-num {
+    position: absolute;
+    left: -130px;
+    top: -20px;
+    font-size: 45px;
+    color: #009688;
+}
+.g-text, .g-text2, .g-text3 {
+    position: absolute;
+    left: -230px;
+    top: 70px;
+    width: 200px;
+    font-size: 17px;
+    color: #747474;
+    text-align: left;
+}
+.value-circle-four{
+    height: 310px;
+    width: 310px;
+    border: 20px solid #00c4b1;
+    margin: 0px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    position: relative;
+}
+.value-circle-four .g-line2 {
+    left: -65px; 
+    top: 270px;
+}
+.value-circle-four .g-circle2 {
+    left: -75px;
+    top: 263px;
+}
+.value-circle-four .g-text2 {
+    left: -130px;
+    top: 290px;
+}
+.value-circle-five{
+    height: 350px;
+    width: 350px;
+    border: 20px solid #00e8d1;
+    margin: 0px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: relative;
+}
+.value-circle-five .arrow-circle2 {
+    position: absolute;
+    left: -19px;
+    top: -21px;
+    height: 350px;
+    width: 350px;
+    border: 20px solid transparent;
+    margin: 0px;
+    border-bottom-color: #00e8d1;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.value-circle-five .g-line3 {
+    left: 320px;
+    top: 165px;
+}
+.value-circle-five .g-circle3 {
+    left: 465px;
+    top: 160px;
+}
+.value-circle-five .g-text3 {
+    left: 370px;
+    top: 185px;
+}
+.value-circle-two::before {
+  background: #009688 none repeat scroll 0 0;
+  bottom: 101%;
+  content:"";
+  height: 18px;
+  left: 45%;
+  position: absolute;
+  transform: rotate(132deg);
+  width: 21px;
+}
+
+
+
+/*======================================================
+    5. expert-area > EXPERTS ARE BEHIND EVERYTHING WE DO.
+========================================================*/
+.section-padding{
+    padding: 98px 0;
+}
+.expert-area{
+    background: url(../img/expert-bg.jpg) no-repeat scroll center center / cover;
+    color: #fff;
+}
+.expert-area h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.expert-area .expert-btn {
+	background: transparent;
+	color: #fff;
+	font-size: 18px;
+	margin: 30px 14px 0px 0px;
+    font-weight: 300;
+    transition: 0.34s;
+}
+.expert-area .expert-btn:hover{
+    background: #fff;
+    color: #009688;
+}
+
+
+
+/*=====================================
+    6. services-area > OUR CORE SERVICES
+=======================================*/
+
+.services-area {
+    position: relative;
+}
+.services-area::before {
+    content: "";
+    background: url(../img/service-bg.jpg) no-repeat scroll top right;
+    height: 100%;
+    width: 34%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.single-service-info-top img,
+.single-service-info-bottom img,
+.single-service img {
+    float: left;
+    padding-right: 10px;
+}
+.single-service-info-top h4,
+.single-service-info-bottom h4,
+.single-service h4 {
+    font-size: 18px;
+    color: #404040;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.single-service-info-top p,
+.single-service-info-bottom p,
+.single-service p {
+    color: #757575;
+    padding-left: 55px;
+}
+.service-margin-bottom {
+    margin-bottom: 30px;
+}
+.service-title h3,
+.blog-title h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444444;
+}
+.service-title,
+.blog-title {
+    margin-bottom: 60px;
+}
+
+
+
+/*===========================================
+    7. blog-area > WE OFFER DIFFERENT SERVICES
+=============================================*/
+
+.single-blog .blog-details h3,
+.single-blog .blog-details h4 {
+    margin: 5px 0;
+}
+.single-blog .blog-details h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #444444;
+}
+.single-blog .blog-details h4 {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.blog-margin-bottom {
+    margin-bottom: 185px;
+}
+.single-blog .blog-details p {
+    font-size: 13px;
+    color: #8c8c8c;
+}
+.single-blog {
+    position: relative;
+}
+.blog-details {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    background: #fff;
+    padding: 8px 15px;
+    right: 10%;
+    border: 1px solid #d9d9d9;
+    height: 222px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-details:hover{
+    box-shadow:  -4px 6px 20px 1px #eee;
+}
+.blog-details:hover h3 {
+  color: #00968a;
+}
+
+
+
+
+/*=================================================
+    8. twitter-area > CHECK OUT 'FINANCE BUSINESS - 
+===================================================*/
+
+.twitter-area {
+    background: #009688;
+    color: #fff;
+    padding: 25px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.twitter-area .link-details .fa {
+    font-size: 60px;
+    margin-right: 23px;
+}
+.twitter-area .link-details a {
+    color: #fff;
+    transition: 0.4s;
+}
+.twitter-area .link-details a:hover{
+    color: #000;
+}
+.twitter-icon {
+    float: left;
+}
+
+
+
+/*===================================================================================
+    9. recent-items-area > RECENT NEWS, USEFUL LINKS, MAILING LIST, ABOUT FINANCE
+====================================================================================*/
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.recent-items-area {
+    background: #313131;
+    color: #fff;
+}
+.recent-heading {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-weight: 300;
+    color: #fff;
+}
+.single-recent-item img {
+    float: left;
+    padding-right: 10px;
+}
+.single-recent-item {
+    font-size: 13px;
+    color: #6b6b6b;
+}
+.single-recent-item .mobile{
+    color: #fff;
+}
+.recent-news-details {
+    margin: 0;
+    text-transform: capitalize;
+    color: #fff;
+}
+.news-published-date {
+    font-size: 10px;
+}
+.single-recent-item-top {
+    margin-bottom: 26px;
+}
+.single-recent-item-left a,
+.single-recent-item-right a {
+    color: #6b6b6b;
+    display: block;
+    transition: 0.4s;
+}
+.single-recent-item-left a:hover,
+.single-recent-item-right a:hover {
+    color: #00968a;
+}
+.search-panel form input[type="search"] {
+    width: 100%;
+}
+.submit-btn {
+    background: #009688;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 10px;
+}
+.single-recent-item .search-panel {
+    margin: 20px 0;
+    position: relative;
+}
+.single-recent-item h4 {
+    font-size: 12px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+}
+.social-links a i {
+    background: #2e2e2e none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #6b6b6b;
+    font-size: 16px;
+    padding: 8px 11px;
+    transition: all 0.34s ease 0s;
+}
+.social-links .fa:hover {
+    background: #31aae2;
+    color: #fff;
+}
+.social-links {
+    margin: 28px 0;
+}
+.about-finance a {
+    border-top: 1px solid #6b6b6b;
+    padding: 7px 0;
+    display: block;
+    color: #6b6b6b;
+    border-bottom: 1px solid #313131;
+}
+.about-finance .fa {
+    margin-right: 10px;
+    transition: 0.4s;
+}
+.about-finance a:hover i{
+    color: #00968a;
+}
+.about-finance a:hover {
+    border-top: 1px solid #00968a;
+    border-bottom: 1px solid #00968a;
+    color: #00968a;
+}
+
+
+
+/*====================================
+    10. footer-area >  THEMEXPERT 2016
+=====================================*/
+
+.footer-area {
+    background: #292929;
+    color: #6b6b6b;
+    padding: 30px 0;
+}
+nav.footer-menu ul {
+    list-style: none;
+}
+nav.footer-menu ul li {
+    display: inline;
+}
+nav.footer-menu ul li a {
+    display: inline-block;
+    padding: 0 5px;
+    color: #6b6b6b;
+    transition: 0.4s;
+}
+nav.footer-menu ul li a:hover{
+    color: #00968a;
+}
+.copyright p {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: 0.4s;
+}
+.copyright p:hover span{
+    color: red;
+}
+
+
+/*=======================================
+            11. SCROLL TO TOP
+=========================================*/
+
+#backtotop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	display: inline-block;
+	font-size: 16px;
+	height: 36px;
+	opacity: 0.2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	text-align: center;
+	visibility: hidden;
+	width: 36px;
+	line-height: 36px;
+	z-index:999;
+}
+#backtotop i {
+    background: #1b9c97 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #000;
+    font-size: 31px;
+    height: 46px;
+    line-height: inherit;
+    width: 47px;
+}
+#backtotop.visible{
+	visibility:visible; opacity:.5; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+#backtotop:hover{
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
